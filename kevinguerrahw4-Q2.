@@ -1,0 +1,15 @@
+charge = 0
+weight = int(input('enter the weight of the package?\n'))
+if weight <= 2:
+ charge = 1.50
+elif weight > 2 and weight <= 6:
+ charge = 3.00
+elif weight > 6 and weight <= 10:
+ charge = 4.00
+elif weight > 10:
+ charge = 4.75
+ 
+total_amount = weight*(1+charge)
+print ("the weight for the package is", weight)
+print ("your total shipping charge is", charge)
+print ("your total is ", total_amount)
